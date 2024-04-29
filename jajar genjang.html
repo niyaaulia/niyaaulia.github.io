@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luas persegi panjang</title>
+	<meta charset="UTF-8">
+<meta name"viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="aulianiya.css">
+</head>
+<body>
+ <a href="halaman per1.html"><button>back</button></a>
+<center><h2>Luas Jajar Genjang</h2></center>
+<center><p>(Alas x Tinggi)</p></center>
+<p>Alas</p>
+<input id="als" type="number" placeholder="Input alas">
+<p>Tinggi</p>
+<input id="tgi" type="number" placeholder="Input tinggi">
+<button onclick="cekHasil()">Hasil</button>
+<p id="hasil"></p>
+<p>Luas :</p>
+<span id="luas" type="number" ></span>
+<script>
+function cekHasil() {
+var als = document.getElementById("als").value;
+var tgi = document.getElementById("tgi").value;
+document.getElementById("luas").innerHTML=als*tgu;
+}
+</script>
+</body>
+</html>

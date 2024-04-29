@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luas persegi panjang</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="aulianiya.css">
+</head>
+<body>
+    <a href="halaman per1.html"><button>back</button></a>
+<center><h2>Luas Persegi panjang</h2></center>
+<center><p>(Panjang x Lebar)</p></center>
+<p>Panjang</p>
+<input id="pan" type="number" placeholder="Input panjang">
+<p>Lebar</p>
+<input id="leb" type="number" placeholder="Input lebar">
+<button onclick="cekHasil()">Hasil</button>
+<p id="hasil"></p>
+<p>Luas :</p>
+<span id="luas" type="number" ></span>
+<script>
+function cekHasil() {
+var pan = document.getElementById("pan").value;
+var leb = document.getElementById("leb").value;
+document.getElementById("luas").innerHTML=pan*leb;
+}
+</script>
+</body>
+</html>

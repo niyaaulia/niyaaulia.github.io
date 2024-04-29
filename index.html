@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name"viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Login</title>
+<link rel="stylesheet" href="aulianiya.css">
+
+</head>
+   
+<body>
+<div class="container">
+<h2>Login</h2>
+<form>
+<div class="page">
+<div class="cat">
+<div class="niya">
+<h4>Username</h4><br>
+<input type="text" id="user" placeholder="Username"><br>
+</div>
+<div class="niya">
+<h4>Password</h4><br>
+<input type="kelas" id="pass" placeholder="Password"><br>
+</div>
+<button onclick="login()">submit</button>
+</div>
+</div>
+</form>
+<script>
+function login() {
+        var user = document.getElementById("user").value;
+        var pass = document.getElementById("pass").value;
+    
+    
+    if (user =="aulniya" && pass=="topan"){
+        alert("Login Sukses!");
+        open("menu_aulianiya.html");
+        window.close()
+    }else{
+        alert("Login Gagal!");
+    }
+    }
+</script>
+</body>
+</html>

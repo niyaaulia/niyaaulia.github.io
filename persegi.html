@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luas perseg</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="aulianiya.css">
+</head>
+<body>
+<a href="halaman per1.html"><button>back</button></a>
+<center><h2>Luas Persegi</h2></center>
+<center><p>(Sisi x Sisi)</p></center>
+<p>Sisi</p>
+<input id="sa" type="number" placeholder="Input sisi">
+<p>Sisi</p>
+<input id="se" type="number" placeholder="Input sisi">
+<button onclick="cekHasil()">Hasil</button>
+<p id="hasil"></p>
+<p>Luas :</p>
+<span id="luas" type="number" ></span>
+<script>
+function cekHasil() {
+var sa = document.getElementById("sa").value;
+var se = document.getElementById("se").value;
+document.getElementById("luas").innerHTML=sa*se;
+}
+</script>
+</body>
+</html>
